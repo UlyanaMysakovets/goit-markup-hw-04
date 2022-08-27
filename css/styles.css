@@ -134,6 +134,15 @@ img {
     color: var(--accent-color)
 }
 
+.contacts-mail:hover .envelope {
+    fill: var(--accent-color);
+
+}
+
+.contacts-phone:hover .smartphone {
+    fill: var(--accent-color);
+
+}
 .contacts .link {
     color: var(--secondary-text-color);
     font-weight: 500;
@@ -158,9 +167,12 @@ img {
 
 /* hero */
 .hero {
-    background-color: var(--background-dark-color);
+    background-color: #C4C4C4;
     text-align: center;
     padding: 200px 0;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+     url('../images/hero.jpg');
+    background-size: cover;
 }
 .hero-title {
     margin-bottom: 30px;
@@ -203,9 +215,75 @@ img {
     column-gap: 30px;
     flex-wrap: wrap;
 }  
+
  .elements {   
   flex-basis: calc((100% - 90px) / 4);
 }
+
+.antenna-box {
+    display: flex;
+    margin-bottom: 30px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;
+}
+
+.antenna-icon {
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-box {
+    display: flex;
+    margin-bottom: 30px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;
+}
+
+.clock-icon {
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.diagram-box {
+    display: flex;
+    margin-bottom: 30px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;
+}
+
+.diagram-icon {
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.astronaut-box {
+    display: flex;
+    margin-bottom: 30px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;
+}
+
+.astronaut-icon {
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
 .benefit-list .title {
     margin-bottom: 10px;
 
@@ -291,6 +369,31 @@ img {
 
 .team {
     background-color: var(--background-cloudy-color);
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+
+}
+
+.social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+
+
 }
 
  
