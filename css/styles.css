@@ -143,6 +143,14 @@ img {
     fill: var(--accent-color);
 
 }
+
+.envelope {
+    margin-right: 10px;
+}
+
+.smartphone {
+    margin-right: 10px;
+}
 .contacts .link {
     color: var(--secondary-text-color);
     font-weight: 500;
@@ -170,6 +178,7 @@ img {
     background-color: #C4C4C4;
     text-align: center;
     padding: 200px 0;
+    max-width: 1600px;
     background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
      url('../images/hero.jpg');
     background-size: cover;
@@ -324,6 +333,7 @@ img {
 .imagine-fone {
     flex-basis: calc((100% - 90px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .photo-cards {
@@ -344,6 +354,10 @@ img {
 
 .subtitle {
     margin-bottom: 10px;
+}
+
+.text {
+    margin-bottom: 16px;
 }
 
 .foto-item {
@@ -375,6 +389,7 @@ img {
     display: flex;
     justify-content: center;
     column-gap: 10px;
+   
 }
 
 .social-list-link {
@@ -384,18 +399,73 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--accent-color);
+    background-color: var(--hero-title-color);
 
 }
 
 .social-list-icon {
     width: 20px;
     height: 20px;
-    fill: currentColor;
+    fill: #AFB1B8;
+}
 
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: var(--hero-title-color);
 
 }
 
+.client {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+}
+
+.client-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.client-list-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    border-radius: 4px;
+    align-items: center; 
+    border: 1px solid #AFB1B8;
+    
+}
+
+.client-list-icon {
+    width: 106px;
+    height: 60px;
+    justify-content: center;
+    align-items: center; 
+    fill: #AFB1B8;
+}
+    
+.client-list-icon:hover,
+.client-list-icon:focus {
+    fill: var(--accent-color);
+}
+
+.client-list-link:hover,
+.client-list-link:focus {
+     border: 1px solid var(--accent-color);
+     color: var(--accent-color);
+
+}
+    
  
 /* Button */
 .button {
@@ -426,6 +496,13 @@ img {
     margin-bottom: 50px;
     column-gap: 8px;
 }
+
+.ikons:hover,
+.ikons:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
 .portfolio-title {
     margin-bottom: 4px;
     color: var(--primary-text-color);
@@ -449,6 +526,11 @@ img {
     
 }
 
+.portfolio-foto:hover,
+.portfolio-foto:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
+    
+}
 .one-card {
     padding: 20px 24px;
     border-top: none;
@@ -523,4 +605,53 @@ line-height: 1.71;
 .footer-contact:focus {
     color: var(--accent-color);
 }
+
+.adress-title {
+        margin-left: 70px;
+   
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--hero-title-color);
+
+}
+
+.footer-general {
+    display: flex;
+    align-items: baseline;
+}
+
+.social-adress {
+   display: flex;
+    margin-left: 70px;
+    gap: 10px;
+
+}
+
+.social-list-adress {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
+    width: 44px; 
+    height: 44px; 
+    border-radius: 50%; 
+    color: var(--hero-title-color);
+    background: rgba(255, 255, 255, 0.1); 
+    
+}
+
+.social-list-adress:hover,
+.social-list-adress:focus {
+    background-color: var(--accent-color);
+}
+
+.social-list-fotter {
+    width: 20px;
+    height: 20px;
+    fill: var(--hero-title-color);
+    }
 
