@@ -145,6 +145,7 @@ img {
 }
 
 .envelope {
+    
     margin-right: 10px;
 }
 
@@ -163,11 +164,16 @@ img {
     color: var(--accent-color);
 }
 
-.contacts {
+.adress-header {
     display: flex;
-    margin-left: auto;
     align-items: center;
 }
+
+.contacts { 
+    display: flex; 
+    margin-left: auto;  
+    align-items: center; 
+} 
 
 .contacts .item + .item {
     margin-left: 50px;
@@ -526,10 +532,14 @@ img {
     
 }
 
-.portfolio-foto:hover,
-.portfolio-foto:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
-    
+.pictures {
+    display: block;
+}
+
+.pictures:hover,
+.pictures:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 .one-card {
     padding: 20px 24px;
@@ -607,12 +617,10 @@ line-height: 1.71;
 }
 
 .adress-title {
-        margin-left: 70px;
-   
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
-        line-height: 1.14px;
+        line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--hero-title-color);
@@ -626,9 +634,11 @@ line-height: 1.71;
 
 .social-adress {
    display: flex;
-    margin-left: 70px;
     gap: 10px;
+}
 
+.page-adress {
+    margin-left: 70px;
 }
 
 .social-list-adress {
